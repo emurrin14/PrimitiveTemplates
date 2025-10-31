@@ -20,6 +20,7 @@ body {
   height: 200px;
   background-color: rgb(219, 112, 112);
 }
+/* START FOOTER */
 .footerContainer {
   width: 100%;
   height: 400px;
@@ -54,28 +55,72 @@ body {
   width: 100%;
   height: 70%;
 }
-.footerMiddle .footerLogo {
+.footerMiddle .footerMiddle0 {
+  flex: 3.5;
   display: flex;
-  flex-grow: 1;
   flex-direction: column;
+  justify-content: space-between;
   background-color: #72a7db;
-  font-size: 2.5rem;
   color: white;
+  padding: 2rem 2rem 2rem 2rem;
+}
+.footerMiddle .footerMiddle0 img {
+  width: 33.3%;
+  height: auto;
+}
+.footerMiddle .footerMiddle0 .socialLinksContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 0.6rem;
+}
+.footerSocialIcon {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.footerSocialIcon:hover {
+  transform: scale(1.1);
+}
+.footerMiddle .footerMiddle0 form {
+  display: flex;
+  width: 50%;
+  border: #757575 1px solid;
+  height: 3rem;
+}
+.footerMiddle .footerMiddle0 .inputEmail {
+  flex: 8;
+  padding: 0;
+  border: none;
+}
+.footerMiddle .footerMiddle0 .inputSubscribe {
+  flex: 3;
+  padding: 0;
+  border: none;
+  color: white;
+  background-color: var(--text);
 }
 .footerMiddle .footerAbout {
-  width: 30%;
+  flex: 2;
   display: flex;
   background-color: bisque;
 }
 .footerMiddle .footerContact {
-  width: 30%;
+  flex: 2;
   display: flex;
   background-color: darkslateblue;
 }
 .footerBottom {
   background-color: #013328;
+  color: rgb(219, 219, 219);
   display: flex;
+  padding: 0 2rem 0 2rem;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 15%;
+  box-sizing: border-box;
 }
+/* END FOOTER */
