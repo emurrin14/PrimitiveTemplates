@@ -34,3 +34,18 @@ hamMenuOverlay.addEventListener("click", () => {
 profileBtn.addEventListener("click", () => {
     profileDropdown.classList.toggle("profileDropdownActive");
 });
+
+//Mobile Footer Accordian Buttons
+const infoBtn = document.getElementById("footerInformationBtn");
+const supportBtn = document.getElementById("footerSupportBtn");
+const socialsBtn = document.getElementById("footerSocialsBtn");
+
+infoBtn.addEventListener("click", () => {
+    infoBtn.classList.toggle("footerInfoActive");
+});
+supportBtn.addEventListener("click", () => {
+    supportBtn.classList.toggle("footerSupportActive");
+});
+socialsBtn.addEventListener("click", () => {
+    socialsBtn.classList.toggle("footerSocialsActive");
+});
