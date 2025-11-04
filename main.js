@@ -1,8 +1,11 @@
-//Header Hamburger Open and Close
+//Header Hamburger Profile, and Cart Open and Close
 const hamOpen = document.getElementById("hamburgerOpen");
 const hamClose = document.getElementById("hamburgerClose");
 const hamMenucontainer = document.getElementById('hamburgerMenuContainer');
 const hamMenuOverlay = document.getElementById('hamburgerMenuOverlay');
+const profileBtn = document.getElementById("profileBtn");
+const cartBtn = document.getElementById("cartBtn");
+const profileDropdown = document.getElementById("profileDropdown");
 
 hamOpen.addEventListener("click", () => {
     hamMenucontainer.style.display = "flex";
@@ -26,4 +29,8 @@ hamMenuOverlay.addEventListener("click", () => {
   
     hamOpen.classList.remove("hamburgerActive");
     hamClose.classList.remove("hamburgerCloseActive");
-  });
+});
+
+profileBtn.addEventListener("click", () => {
+    profileDropdown.classList.toggle("profileDropdownActive");
+});
