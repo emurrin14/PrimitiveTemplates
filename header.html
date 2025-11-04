@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter Header</title>
+    <link rel="stylesheet" href="HeaderStyles.css" />
+    <link rel="preload" href="main.js" />
+  </head>
+  <body>
+    <header class="headerContainer">
+      <!-- header left group -->
+      <div class="headerLeft">
+        <a href="#" class="headerTitle">
+          <img src="images/FRAYED-transparent.png" alt="Home" />
+        </a>
+        <a class="headerLinkText" href="#">New Arrivals</a>
+        <a class="headerLinkText" href="#">Denim</a>
+        <a class="headerLinkText" href="#">Shirts</a>
+        <a class="headerLinkText" href="#">Track Orders</a>
+      </div>
+      <!-- header left hamburger menu (max-width: 768px) -->
+      <div class="headerHamburger">
+        <img
+          id="hamburgerOpen"
+          src="images/HamburgerMenu.svg"
+          alt="Menu"
+        />
+      </div>
+      <!-- header right group -->
+      <div class="headerRight">
+        <img src="images/cart.svg" alt="Cart" />
+        <img src="images/profile.svg" alt="Profile" />
+      </div>
+    </header>
+    <div id="hamburgerMenuOverlay" class="hamburgerMenuOverlay"></div>
+    <div id="hamburgerMenuContainer" class="hamburgerMenuContainer">
+      <div>
+        <img
+        id="hamburgerClose"
+        src="images/HamburgerClose.svg"
+        alt="Close"
+      />
+      </div>
+      <div>New Arrivals</div>
+      <div>Denim</div>
+      <div>Shirts</div>
+      <div>Track Orders</div>
+    </div>
+  </body>
+<script src="main.js"></script>
+</html>

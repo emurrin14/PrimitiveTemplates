@@ -91,7 +91,7 @@ body {
 }
 .footerMiddle .footerMiddle0 .inputEmail {
   flex: 8;
-  padding: 0;
+  padding: 0 0 0 1rem;
   border: none;
 }
 .footerMiddle .footerMiddle0 .inputSubscribe {
@@ -104,6 +104,8 @@ body {
 .footerMiddle .footerAbout {
   flex: 2;
   display: flex;
+  justify-content: center;
+  flex-direction: column;
   background-color: bisque;
 }
 .footerMiddle .footerContact {

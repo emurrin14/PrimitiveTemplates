@@ -1,0 +1,113 @@
+/* START HEADER */
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  align-items: center;
+  z-index: 3;
+  height: 80px;
+  background-color: var(--main);
+  top: 0px;
+  padding: 0;
+  border-bottom: #ccc 0.1rem solid;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 1.5rem 0 1.5rem;
+}
+.headerLeft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+.headerLeft img {
+  height: 45px;
+}
+.headerLeft a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 1.2rem;
+}
+.headerLeft a:hover {
+  text-decoration: underline;
+}
+.headerRight {
+  gap: 1rem;
+}
+.headerHamburger {
+  display: none;
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#hamburgerOpen {
+  display: block;
+  cursor: pointer;
+}
+.hamburgerActive {
+  display: none !important;
+}
+#hamburgerClose {
+  display: none;
+}
+.hamburgerCloseActive {
+  display: block !important;
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  .headerLeft a {
+    font-size: 1rem;
+  }
+  .headerLeft {
+    gap: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .headerLeft .headerLinkText {
+    display: none;
+  }
+  .headerLeft img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .headerHamburger {
+    display: block;
+  }
+}
+/* END HEADER */
+/* START HAMBURGER MENU */
+.hamburgerMenuContainer {
+  display: none;
+  position: fixed;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  color: var(--text);
+  height: 300px;
+  width: 100%;
+  bottom: 0;
+  z-index: 10;
+  transform: translateY(2px);
+}
+.hamburgerMenuContainer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 80%;
+  border-bottom: 2px solid #ccc;
+}
+.hamburgerMenuOverlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 9;
+}
+/* END HAMBURGER MENU */
