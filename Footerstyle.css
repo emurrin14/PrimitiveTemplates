@@ -63,6 +63,10 @@
   padding: 2rem 2rem 2rem 2rem;
 }
 .footerMiddle .footerMiddle0 img {
+  width: 20px;
+  height: 20px;
+}
+.footerMiddle .footerMiddle0 .footerFrayedLogo {
   width: 33.3%;
   height: auto;
 }
@@ -77,10 +81,6 @@
   color: white;
   display: inline-block;
   transition: color 0.3s ease, transform 0.3s ease;
-}
-.footerSocialIcon svg {
-  width: 20px;
-  height: 20px;
 }
 .footerSocialIcon:hover {
   transform: scale(1.1);
@@ -145,26 +145,47 @@
   box-sizing: border-box;
 }
 .footerAccordianContainer {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   width: 100%;
   height: 200px;
   bottom: 0;
   background-color: var(--text);
+  color: white;
   z-index: 9;
   transform: translateY(2px);
 }
-.footerAccordianContainer div {
-  color: white;
+.footerAccordianContainer .footerDropdownContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 75%;
   border-bottom: 2px solid #ccc;
+}
+.footerAccordianContainer .footerBtnContainer {
+  color: white;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 0 1rem 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
   align-items: center;
   flex: 1;
   cursor: pointer;
+}
+.footerAccordianDropdown {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 1rem;
+}
+.footerAccordianDropdownActive {
+  display: flex !important;
 }
 .footerAccordianSocials {
   display: flex;
@@ -192,6 +213,9 @@
 @media (max-width: 768px) {
   .footerContainer {
     display: none;
+  }
+  .footerAccordianContainer {
+    display: flex;
   }
 }
 /* END FOOTER */

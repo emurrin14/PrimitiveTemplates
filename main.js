@@ -39,13 +39,10 @@ profileBtn.addEventListener("click", () => {
 const infoBtn = document.getElementById("footerInformationBtn");
 const supportBtn = document.getElementById("footerSupportBtn");
 const socialsBtn = document.getElementById("footerSocialsBtn");
+//accordian menu toggles
+const infoDropdown = document.getElementById("footerAccordianDropdown");
 
 infoBtn.addEventListener("click", () => {
-    infoBtn.classList.toggle("footerInfoActive");
-});
-supportBtn.addEventListener("click", () => {
-    supportBtn.classList.toggle("footerSupportActive");
-});
-socialsBtn.addEventListener("click", () => {
-    socialsBtn.classList.toggle("footerSocialsActive");
+    infoDropdown.classList.toggle("footerAccordianDropdownActive");
+    alert("info");
 });
