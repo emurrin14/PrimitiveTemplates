@@ -1,0 +1,17 @@
+:root {
+  --main: #ffffff;
+  --bg: #222222;
+  --card: #ffffff;
+  --hover: #72a7db;
+  --accent: ;
+  --text: #013328;
+  --textopp: #2f181b;
+  --gap: 1rem;
+  --max-width: 600px;
+  --border: 1px solid #ccc;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}

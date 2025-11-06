@@ -1,48 +1,57 @@
-//Header Hamburger Profile, and Cart Open and Close
-const hamOpen = document.getElementById("hamburgerOpen");
-const hamClose = document.getElementById("hamburgerClose");
-const hamMenucontainer = document.getElementById('hamburgerMenuContainer');
-const hamMenuOverlay = document.getElementById('hamburgerMenuOverlay');
-const profileBtn = document.getElementById("profileBtn");
-const cartBtn = document.getElementById("cartBtn");
-const profileDropdown = document.getElementById("profileDropdown");
+document.addEventListener("DOMContentLoaded", () => {
+    //Header Hamburger Profile, and Cart Open and Close
+    const hamOpen = document.getElementById("hamburgerOpen");
+    const hamClose = document.getElementById("hamburgerClose");
+    const hamMenucontainer = document.getElementById('hamburgerMenuContainer');
+    const hamMenuOverlay = document.getElementById('hamburgerMenuOverlay');
+    const profileBtn = document.getElementById("profileBtn");
+    const cartBtn = document.getElementById("cartBtn");
+    const profileDropdown = document.getElementById("profileDropdown");
 
-hamOpen.addEventListener("click", () => {
-    hamMenucontainer.style.display = "flex";
-    hamMenuOverlay.style.display = "block";
+    if (hamOpen) {
+        hamOpen.addEventListener("click", () => {
+            hamMenucontainer.style.display = "flex";
+            hamMenuOverlay.style.display = "block";
 
-    hamOpen.classList.add("hamburgerActive");
-    hamClose.classList.add("hamburgerCloseActive");
-});
+            hamOpen.classList.add("hamburgerActive");
+            hamClose.classList.add("hamburgerCloseActive");
+        });
+    }
 
-hamClose.addEventListener("click", () => {
-    hamMenucontainer.style.display = "none";
-    hamMenuOverlay.style.display = "none";
+    if (hamClose) {
+        hamClose.addEventListener("click", () => {
+            hamMenucontainer.style.display = "none";
+            hamMenuOverlay.style.display = "none";
 
-    hamOpen.classList.remove("hamburgerActive");
-    hamClose.classList.remove("hamburgerCloseActive");
-});
+            hamOpen.classList.remove("hamburgerActive");
+            hamClose.classList.remove("hamburgerCloseActive");
+        });
+    }
 
-hamMenuOverlay.addEventListener("click", () => {
-    hamMenucontainer.style.display = "none";
-    hamMenuOverlay.style.display = "none";
-  
-    hamOpen.classList.remove("hamburgerActive");
-    hamClose.classList.remove("hamburgerCloseActive");
-});
+    if (hamMenuOverlay) {
+        hamMenuOverlay.addEventListener("click", () => {
+            hamMenucontainer.style.display = "none";
+            hamMenuOverlay.style.display = "none";
+        
+            hamOpen.classList.remove("hamburgerActive");
+            hamClose.classList.remove("hamburgerCloseActive");
+        });
+    }
 
-profileBtn.addEventListener("click", () => {
-    profileDropdown.classList.toggle("profileDropdownActive");
-});
+    if (profileBtn) {
+        profileBtn.addEventListener("click", () => {
+            profileDropdown.classList.toggle("profileDropdownActive");
+        });
+    }
 
-//Mobile Footer Accordian Buttons
-const infoBtn = document.getElementById("footerInformationBtn");
-const supportBtn = document.getElementById("footerSupportBtn");
-const socialsBtn = document.getElementById("footerSocialsBtn");
-//accordian menu toggles
-const infoDropdown = document.getElementById("footerAccordianDropdown");
+    //Mobile Footer Accordian Buttons
+    const infoBtn = document.getElementById("footerInformationBtn");
+    //accordian menu toggles
+    const infoDropdown = document.getElementById("footerAccordianDropdown");
 
-infoBtn.addEventListener("click", () => {
-    infoDropdown.classList.toggle("footerAccordianDropdownActive");
-    alert("info");
+    if (infoBtn) {
+        infoBtn.addEventListener("click", () => {
+            infoDropdown.classList.toggle("footerAccordianDropdownActive");
+        });
+    }
 });

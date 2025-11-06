@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Filter Header</title>
     <link rel="stylesheet" href="HeaderStyles.css" />
-    <link rel="preload" href="main.js" />
+    <link rel="preload" as="js" href="main.js" />
   </head>
   <body>
     <header class="headerContainer">
@@ -33,6 +33,7 @@
         <p>Log In</p>
       </div>
     </header>
+    <!-- START MOBILE HAMBURGER MENU -->
     <div id="hamburgerMenuOverlay" class="hamburgerMenuOverlay"></div>
     <div id="hamburgerMenuContainer" class="hamburgerMenuContainer">
       <div>
@@ -43,6 +44,16 @@
       <div>Shirts</div>
       <div>Track Orders</div>
     </div>
+    <!-- END MOBILE HAMBURGER MENU -->
+    <!-- START PRODUCT FILTERS -->
+    <div class="productFiltersContainer">
+      <a href="#" class="filterText">All</a>
+      <a href="#" class="filterText">Denim</a>
+      <a href="#" class="filterText">Shirts</a>
+      <a href="#" class="filterText">Jackets</a>
+      <a href="#" class="filterText">Pants</a>
+    </div>
+    <!-- START PRODUCT FILTERS -->
   </body>
   <script src="main.js"></script>
 </html>

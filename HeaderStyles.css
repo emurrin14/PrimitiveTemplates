@@ -141,3 +141,24 @@ html {
   z-index: 9;
 }
 /* END HAMBURGER MENU */
+/* START PRODUCT FILTER */
+.productFiltersContainer {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.2rem;
+  top: 0;
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #ccc;
+  color: var(--text);
+  height: 40px;
+  padding: 0 2rem 0 2rem;
+}
+.productFiltersContainer a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--text);
+}
+/* END PRODUCT FILTER */
